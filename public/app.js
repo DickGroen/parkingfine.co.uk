@@ -41,11 +41,11 @@ async function handleFile(input) {
 
     // Money + type first
     if (isPrivate && fineAmount) {
-      teaserCompany.textContent = `Private fine of \u00A3${fineAmount} — you may not have to pay this`;
+      teaserCompany.textContent = `Private fine of \u00A3${fineAmount} \u2014 we\u2019ve identified potential appeal scenarios`;
     } else if (fineAmount) {
-      teaserCompany.textContent = `We found potential grounds to appeal your \u00A3${fineAmount} fine`;
+      teaserCompany.textContent = `We\u2019ve identified potential appeal scenarios for your \u00A3${fineAmount} fine`;
     } else {
-      teaserCompany.textContent = issuer ? `${issuer} fine — we found potential grounds to appeal` : 'We found potential grounds to appeal your fine';
+      teaserCompany.textContent = issuer ? `${issuer} fine \u2014 we\u2019ve identified potential appeal scenarios` : 'We\u2019ve identified potential appeal scenarios for your fine';
     }
 
     teaserFound.textContent = 'Initial check:';
